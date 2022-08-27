@@ -228,6 +228,7 @@ class _AndroidCardDialog extends State<AndroidCardDialog> {
             MaterialButton(
                 color: Theme.of(context).primaryColor,
                 onPressed: () {
+                  widget.onValueChanged(_product);
                   Navigator.of(context).pop();
                 },
                 child: const Text('Продолжить покупки')),

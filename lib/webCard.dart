@@ -83,7 +83,7 @@ class _WebCard extends State<WebCard> {
                   height: 350,
                   decoration: BoxDecoration(
                       image: DecorationImage(
-                    image: AssetImage(_product.image450!),
+                    image: AssetImage(_product.image450),
                   )),
                 ),
                 IconButton(
@@ -203,7 +203,7 @@ class _WebCardDialog extends State<WebCardDialog> {
                 ),
                 Row(
                   children: [
-                    ElevatedButton(
+                    MaterialButton(
                         onPressed: () {
                           Navigator.of(context).pop();
                         },
